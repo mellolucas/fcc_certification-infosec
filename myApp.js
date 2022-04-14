@@ -4,9 +4,12 @@ const app = express();
 
 
 
+// -------------------------------------------------
+// ------------- Challenges ------------------------
 
+// Challenge 1: Install and require 'helmet'
 
-
+let helmet = require('helmet');
 
 
 
