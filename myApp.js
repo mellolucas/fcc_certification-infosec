@@ -2,17 +2,15 @@ const express = require('express');
 const app = express();
 
 
-
-
-// -------------------------------------------------
 // ------------- Challenges ------------------------
 
 // Challenge 1: Install and require 'helmet'
 
 let helmet = require('helmet');
 
+// Challenge 2: Hide 'powered by' info with with helmet.hidePoweredBy() method
 
-
+app.use(helmet.hidePoweredBy());
 
 
 
