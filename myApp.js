@@ -16,8 +16,9 @@ app.use(helmet.hidePoweredBy());
 
 app.use(helmet.frameguard({action: 'deny'}));
 
+// Challenge 4: Mitigate XSS with helmet.xssFilter() method to set filter to 1
 
-
+app.use(helmet.xssFilter());
 
 
 
