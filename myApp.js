@@ -12,8 +12,9 @@ let helmet = require('helmet');
 
 app.use(helmet.hidePoweredBy());
 
+// Challenge 3: Mitigate clickhighjacking risk with helmet.frameguard() method
 
-
+app.use(helmet.frameguard({action: 'deny'}));
 
 
 
